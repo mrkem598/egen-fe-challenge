@@ -41,9 +41,9 @@ Delete user from the Store
 View users profile from the app with easy navigation
 
 
-## Next Step
+## Next Step (Feature improvement)
 
-Separate
+Separate client code from the server code and update the configuration files
 
 Create sign in and sign out page
 
