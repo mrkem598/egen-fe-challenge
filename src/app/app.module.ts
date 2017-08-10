@@ -11,7 +11,6 @@ import { HomeComponent } from './home.component';
 import { CONST_ROUTING } from './app.routing';
 import { SharedService } from "./shared.service";
 
-
 @NgModule({
   declarations: [
     AppComponent,

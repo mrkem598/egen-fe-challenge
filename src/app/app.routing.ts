@@ -5,7 +5,7 @@ import { UserProfileComponent } from "./user-profile/user-profile.component";
 
 
 const MAINMENU_ROUTES: Routes = [
-                   
+
                       { path: '', redirectTo: '/users', pathMatch: 'full' },
                       { path: 'users', component: UsersComponent },
                       { path: 'add-user', component: AddUserComponent },
