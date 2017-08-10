@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+  font-family:url('https://fonts.googleapis.com/css?family=Lato:400,700');
+}
+
+.container{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+label{
+ color: #ff6600 !important;
+}
+.btn-default {
+ border-color: #ff6600 !important;
+ color: #ff6600 !important;
+}
+
+.btn {
+border-color: #ff6600 !important;
+ color: #ff6600 !important;
+
+}
+
+.btn-danger {
+ border-color: #ff6600 !important;
+ background-color: #ff6600 !important;
+ color: white !important;
+}
+
+.navbar{
+padding:2%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-nav>li>a{
+  color:white !important;
+}
+
+.collapse.in{
+   background-color: rgba(85, 93, 104, 0.95)  !important;
+}
+
+.icon-bar{
+  background-color:#ff6600 !important;
+}
+
+.table tr.active td {
+  background-color:#123456 !important;
+  color: white;
+}
+
+.table>thead>tr>th{
+  border-bottom : 2px solid  #ff6600 !important;
+  color:#ff6600  !important;
+}
+
+.table>tbody>tr>td{
+  border-bottom : 1px solid  #ff6600 !important;;
+}

@@ -1,0 +1,40 @@
+<div class="col-xs-12" style="padding-bottom:5%;">
+    <h2 style="vertical-align:inherit;display:inline">User Details</h2>
+   <button class="btn btn-default" id="addNew" style="float:right;" routerLinkActive="active" [routerLink]="['/users']"> < Back</button>
+</div>
+
+<div class="col-xs-12">
+
+ <div class="col-xs-6">
+
+<aside>
+  <h4>Name</h4>
+  <p>{{user?.firstName}}  {{user?.lastName}}</p>
+</aside>
+<br>
+
+<aside>
+  <h4>Email</h4>
+  <p>{{user?.email}}</p>
+</aside>
+<br>
+
+<aside>
+  <h4>Address</h4>
+  <p>{{user?.address?.street}} <br> {{user?.address?.city}}</p>
+</aside>
+<br>
+<aside>
+  <h4>Company</h4>
+  <p style="display:inline">{{user?.company?.name}} </p><a href="{{user?.company?.website}}">{{user?.company?.website}}</a>
+</aside>
+
+</div>
+
+ <div class = "col-xs-4">
+   <img alt="profile picture" src="{{user?.profilePic}}" style="width:100%">
+ </div>
+
+ </div>
+
+  <button class="btn btn-danger" id="addNew" style="float:left;margin-top:5%" (click)="deleteUser(user)"> Delete User</button>

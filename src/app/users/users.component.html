@@ -1,0 +1,28 @@
+<div class="col-xs-12" style="padding-bottom:5%;">
+    <h2 style="vertical-align:inherit;display:inline">Users</h2>
+   <button class="btn btn-default" id="addNew" style="float:right;" routerLinkActive="active" [routerLink]="['/add-user']">+ Add User</button>
+</div>
+<div class="col-xs-12">
+<table class="table table-hover">
+  <thead>
+     <tr>
+       <th></th>
+       <th>Name</th>
+       <th>Email</th>
+       <th>City</th>
+       <th>Company</th>
+     </tr>
+   </thead>
+   <tbody>
+     <tr *ngFor="let user of users;" routerLinkActive="active" [routerLink]="['/user-profile']" (click) = "rowClick(user)" style="cursor:pointer">
+            <td><img style="width:10%;height:auto;border-radius:50%; " alt="profile Picture" src="{{user?.profilePic}}"/></td>
+            <td>{{user?.firstName}}  {{user?.lastName}}</td>
+            <td>{{user?.email}}</td>
+            <td>{{user?.address?.city}}</td>
+            <td>{{user?.company?.name}}</td>
+
+      </tr>
+   </tbody>
+ </table>
+
+</div>

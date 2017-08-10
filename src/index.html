@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>ProjectUsers</title>
+  <base href="/">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="../styles.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <nav class="navbar navbar-default " style="padding:2%">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">  <img alt="ProjectUsers" style="width:25%"  src="../egen-logo.png"></img></a>
+       </div>
+      <div class="collapse navbar-toggle" id="myNavbar">
+            <ul class="nav navbar-nav nav-pills nav-stacked">
+             <li style="cursor:pointer;" [routerLinkActive]="['active']"> <a [routerLink]="['/users']" >All Users</a></li>
+             <li style="cursor:pointer;" [routerLinkActive]="['active']"> <a [routerLink]="['/add-user']" >Add A New User</a></li>
+           </ul>
+      </div>
+    </div>
+</nav>
+  <app-root>Loading...</app-root>
+  <br>
+<h6 class="blocktext"> Copyright &copy; 2017, Mohammed K</h6>
+</body>
+</html>

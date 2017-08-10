@@ -1,0 +1,66 @@
+<div class="col-xs-12" style="padding-bottom:5%;">
+  <h2 style="vertical-align:inherit;display:inline;">Create User</h2>
+  <button class="btn btn-default" id="addNew" style="float:right" routerLinkActive="active" [routerLink]="['/users']">< back</button>
+</div>
+
+<form [formGroup]="addUser" (ngSubmit)="addUserToGroup(addUser.value)">
+  <div class="col-xs-6 form-group">
+    <label>First Name </label>
+    <input class="form-control" type="text" placeholder="First Name" required formControlName = "firstName">
+      <div *ngIf="form.controls.firstName.errors?.pattern" class="error">
+        Name has invalid characters
+      </div>
+  </div>
+  <div class="col-xs-6 form-group">
+    <label>Last Name </label>
+    <input class="form-control" type="text" placeholder="Last Name" required formControlName ="lastName">
+      <div *ngIf="form.controls.lastName.errors?.pattern" class="error">
+      Name has invalid characters
+      </div>
+  </div>
+  <div class="col-xs-12 form-group">
+    <label>Email</label>
+    <input class="form-control" type="email" placeholder="newuseremail@email.com" required formControlName="email">
+  </div>
+
+  <div formGroupName="address">
+    <div class="col-xs-6 form-group">
+      <label>Street</label>
+      <input class="form-control" type="text" placeholder="1234 Central Place NE" required formControlName="street">
+    </div>
+
+    <div class="col-xs-6 form-group">
+      <label>City </label>
+      <input class="form-control" type="text" placeholder="City Name" required formControlName = "city">
+    </div>
+
+    <div class="col-xs-6 form-group">
+      <label>State</label>
+      <input class="form-control" type="text" placeholder="Name of The State" required formControlName ="state">
+    </div>
+
+    <div class="col-xs-6 form-group">
+      <label>Zip Code </label>
+      <input class="form-control" type="text" placeholder="12345"  required formControlName="zip">
+    </div>
+    <div class="col-xs-6 form-group">
+      <label>Country </label>
+      <input class="form-control" type="text" placeholder="Country" required formControlName="country">
+    </div>
+  </div>
+  <div formGroupName="company">
+    <div class="col-xs-6 form-group">
+      <label>Company Name</label>
+      <input class="form-control" type="text" placeholder="Company Name" required formControlName="companyName">
+    </div>
+
+    <div class="col-xs-6 form-group">
+      <label>Company Website</label>
+      <input class="form-control" type="text" placeholder="Website" required formControlName="companyWebsite">
+    </div>
+  </div>
+  <br>
+  <div class="col-xs-12 form-group">
+    <button type="submit" [disabled]="!addUser.valid" class="btn btn-danger" style="margin-top:2%;">Add</button>
+  </div>
+</form>

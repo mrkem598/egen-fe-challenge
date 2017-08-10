@@ -1,0 +1,23 @@
+body{
+  font-family:url('https://fonts.googleapis.com/css?family=Lato:400,700');
+}
+
+.btn-default { !important
+border-color:#ff6600;
+}
+.btn { !important
+border-color:#ff6600;
+
+}
+.icon-bar{ !important
+  background-color:#ff6600;
+}
+
+.table tr.active td {
+  background-color:#123456 !important;
+  color: white;
+}
+
+.table>thead>tr>th{
+  border-bottom : 2px solid orange;
+}
